@@ -5,6 +5,5 @@ html {
 
 .app-body {
     display: grid;
-    grid-template-rows: 10rem 1fr 6rem;
     min-height: 100vh;
 }
