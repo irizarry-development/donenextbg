@@ -1,0 +1,48 @@
+.wave-container {
+    display: grid;
+    grid-template-rows: 4rem 1fr 4rem;
+}
+
+.wave-container .top-wave,
+.wave-container .bottom-wave {
+    height: 4rem;
+    width: 100%;
+}
+
+.wave-container .top-wave path,
+.wave-container .bottom-wave path {
+    fill: #e0e0e0;
+}
+
+.wave-container .top-wave {
+    align-self: end;
+}
+
+.wave-container .bottom-wave {
+    align-self: start;
+}
+
+.wave-container .wave-content {
+    background: #e0e0e0;
+    padding: 0 2rem;
+    display: grid;
+    row-gap: 3rem;
+}
+
+.wave-container .wave-content .wave-content-title {
+    text-align: center;
+}
+
+.wave-container .wave-content .wave-content-title h1 {
+    font-size: 3rem;
+    font-family: Erica One, sans-serif;
+}
+
+.wave-container .wave-content .wave-content-title p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.wave-container .wave-content .wave-content-body {
+    margin-bottom: 4rem;
+}

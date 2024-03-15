@@ -1,0 +1,10 @@
+@import 'normalize.css';
+@import 'general.css';
+
+@import 'components/header.css';
+@import 'components/footer.css';
+@import 'components/wave-container.css';
+@import 'components/container.css';
+@import 'components/card.css';
+
+@import 'app/page.css';

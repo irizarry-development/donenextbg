@@ -1,0 +1,25 @@
+.app-header {
+    display: grid;
+    grid-template-columns: 24rem 6rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.app-header .app-header-logo {
+    width: 20rem;
+    height: 6rem;
+    background: #e0e0e0;
+    place-self: center;
+}
+
+.app-header .app-navigation {
+    display: none;
+}
+
+.app-header .app-menu-toggle {
+    height: 3rem;
+    width: 3rem;
+    fill: #0099ff;
+    place-self: center;
+    cursor: pointer;
+}

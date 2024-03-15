@@ -1,0 +1,10 @@
+html {
+    font-size: 10px;
+    font-family: Raleway, sans-serif;
+}
+
+.app-body {
+    display: grid;
+    grid-template-rows: 10rem 1fr 6rem;
+    min-height: 100vh;
+}

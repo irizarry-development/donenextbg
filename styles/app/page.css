@@ -1,0 +1,46 @@
+.jumbotron {
+    display: grid;
+    margin: 6rem 2rem;
+}
+
+.jumbotron h1 {
+    font-family: Erica One, sans-serif;
+    font-size: 5rem;
+    color: #0099ff;
+    margin: 0;
+}
+
+.jumbotron p {
+    font-size: 2rem;
+    color: #333;
+}
+
+.jumbotron button {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: start;
+    font-weight: bold;
+}
+
+.contact-methods {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    place-items: center;
+}
+
+.contact-methods a {
+    height: 3rem;
+    width: 3rem;
+    font-size: 3rem;
+    border: 0.1rem solid #0099ff;
+    padding: 1.6rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #0099ff;
+}

@@ -1,0 +1,14 @@
+.card-masonry {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.card-masonry .card {
+    border-radius: 1rem;
+    background: #d4d4d4;
+    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); */
+    border: 0.1rem solid #c4c4c4;
+    padding: 2rem;
+    display: grid;
+    justify-items: center;
+}

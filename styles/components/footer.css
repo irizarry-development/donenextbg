@@ -1,0 +1,19 @@
+.app-footer {
+    display: grid;
+}
+
+.app-footer-wave {
+    height: 4rem;
+    width: 100%;
+}
+
+.app-footer .app-footer-content {
+    background: #0099ff;
+    padding: 2rem;
+}
+
+.app-footer .app-footer-content p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
