@@ -5,6 +5,7 @@
 .app-footer-wave {
     height: 4rem;
     width: 100%;
+    align-self: end;
 }
 
 .app-footer .app-footer-content {
