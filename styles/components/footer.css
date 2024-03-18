@@ -1,5 +1,6 @@
 .app-footer {
     display: grid;
+    grid-template-rows: 4rem 1fr;
 }
 
 .app-footer-wave {
@@ -11,6 +12,7 @@
 .app-footer .app-footer-content {
     background: #0099ff;
     padding: 2rem;
+    display: grid;
 }
 
 .app-footer .app-footer-content p {
