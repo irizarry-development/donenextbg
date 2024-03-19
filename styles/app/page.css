@@ -30,17 +30,6 @@
 .contact-methods {
     display: grid;
     width: 100%;
-    grid-auto-flow: column;
-    place-items: center;
-}
-
-.contact-methods a {
-    height: 3rem;
-    width: 3rem;
-    font-size: 3rem;
-    border: 0.1rem solid #0099ff;
-    padding: 1.6rem;
-    border-radius: 50%;
-    text-decoration: none;
-    color: #0099ff;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
 }

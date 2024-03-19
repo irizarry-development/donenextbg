@@ -57,7 +57,7 @@ export default function CoveragePage() {
                     <li>And more!</li>
                 </ul>
                 <p>
-                    If you don't see your area listed, please contact us to see if we can help you.
+                    If your area is not listed, please contact us to see if we can help you.
                     
                 </p>
                 <Button

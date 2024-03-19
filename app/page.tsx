@@ -70,12 +70,18 @@ export default function Home() {
         image="contactus.svg"
       >
         <section className="contact-methods">
-          <a href="tel:123-456-7890" className="contact-method">
-            <FaPhoneFlip />
-          </a>
-          <a href="mailto:test@irizarry.dev" className="contact-method">
-            <FaEnvelopeCircleCheck />
-          </a>
+          <Button
+            text="Call Us"
+            href="tel:123-456-7890"
+            size="large"
+            color="primary"
+          />
+          <Button
+            text="Email Us"
+            href="mailto:test@irizarry.dev"
+            size="large"
+            color="secondary"
+          />
         </section>
       </Container>
     </Fragment>
