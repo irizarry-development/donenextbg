@@ -4,6 +4,11 @@
     grid-template-columns: 24rem 6rem;
     justify-content: space-between;
     border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
+    z-index: 1000;
 }
 
 .app-header .app-header-logo {
@@ -13,14 +18,46 @@
     place-self: center;
 }
 
-.app-header .app-navigation {
-    display: none;
-}
-
 .app-header .app-menu-toggle {
     height: 3rem;
     width: 3rem;
     fill: #0099ff;
     place-self: center;
     cursor: pointer;
+}
+
+.app-header .app-navigation {
+    top: 8.1rem;
+    display: grid;
+    position: absolute;
+    width: 100vw;
+    right: -100vw;
+    transition: 150ms ease-in-out;
+    background: white;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.app-header .app-navigation.open {
+    transform: translateX(-100vw);
+}
+
+.app-header .app-navigation .app-navigation-content {
+    display: grid;
+    text-align: end;
+}
+
+.app-header .app-navigation .app-navigation-content .app-navigation-link {
+    font-size: 1.6rem;
+    color: #333;
+    text-decoration: none;
+    transition: 150ms ease-in-out;
+    padding: 1rem 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr 2rem;
+    column-gap: 1rem;
+}
+
+.app-header .app-navigation .app-navigation-content .app-navigation-link:hover {
+    background: #0099ff;
+    color: white;
 }
