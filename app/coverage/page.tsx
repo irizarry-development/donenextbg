@@ -20,7 +20,7 @@ export default function CoveragePage() {
                     apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
                 >
                     <Map
-                        style={{ width: '100vw', height: '100vw' }}
+                        style={{ width: '100vw', height: '50rem' }}
                         defaultCenter={DEFAULT_MAP_CENTER}
                         defaultZoom={7}
                         gestureHandling={'cooperative'}
