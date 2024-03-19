@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 
 const carouselItems = [
     {
@@ -45,41 +46,34 @@ export default function Carousel() {
 
     const [active, setActive] = useState(0);
 
-    const _renderCarouselItems = () => {
-        return carouselItems.map((item, index) => {
-            return (
-                <section 
-                    key={index}
-                    className={`carousel-item ${active === index ? "active" : ""}`}
-                    style={{ backgroundColor: item.color }}
-                >
-                    <h1>{item.title}</h1>
-                </section>
-            )
-        })
-    }
+    const _renderCarouselItem = () => {
 
-    const _renderCarouselButtons = () => {
-        return carouselItems.map((item, index) => {
-            return (
-                <button 
-                    key={index}
-                    className={`carousel-button ${active === index ? "active" : ""}`}
-                    onClick={() => setActive(index)}
-                >
-                    {item.title}
-                </button>
-            )
-        })
+        const currentItem = carouselItems[active];
+
+        return (
+            <section
+                className="active-carousel-image"
+                style={{ backgroundColor: currentItem.color }}
+            >
+            </section>
+        )
+
     }
     
     return (
         <section className="carousel">
-            <section className="carousel-items">
-                {_renderCarouselItems()}
+            <section className="active-carousel-item">
+                {_renderCarouselItem()}
             </section>
-            <section className="carousel-buttons">
-                {_renderCarouselButtons()}
+            <section className="carousel-arrows">
+                <FaCircleChevronLeft 
+                    className="carousel-arrow"
+                    onClick={() => setActive(active - 1 < 0 ? carouselItems.length - 1 : active - 1)}
+                />
+                <FaCircleChevronRight
+                    className="carousel-arrow"
+                    onClick={() => setActive(active + 1 > carouselItems.length - 1 ? 0 : active + 1)}   
+                />
             </section>
         </section>
     )

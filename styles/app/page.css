@@ -33,3 +33,31 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
 }
+
+.carousel {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-rows: 1fr 5rem;
+}
+
+.carousel .carousel-arrows {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.carousel .carousel-arrows .carousel-arrow {
+    place-self: center;
+    font-size: 4.4rem;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+
+.carousel .carousel-arrows .carousel-arrow:hover {
+    color: #0099ff;
+    font-size: 4.6rem;
+}
+
+.carousel .active-carousel-image {
+    width: 100%;
+    height: 24rem;
+}
