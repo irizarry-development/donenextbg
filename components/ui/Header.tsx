@@ -2,21 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { FaBars, FaCircleInfo, FaHouse, FaListCheck, FaMapLocationDot, FaPhone } from "react-icons/fa6";
-
-interface NavLink {
-    readonly text: string;
-    readonly href: string;
-    readonly component: JSX.Element;
-}
-
-const NAV_LINKS: NavLink[] = [
-    { text: 'Home', href: '/', component: <FaHouse />},
-    { text: 'About', href: '/about', component: <FaCircleInfo />},
-    { text: 'Services', href: '/services', component: <FaListCheck />},
-    { text: 'Coverage Area', href: '/coverage', component: <FaMapLocationDot />},
-    { text: 'Contact', href: '/contact', component: <FaPhone />}
-]
+import { FaBars } from "react-icons/fa6";
+import { NAV_LINKS } from "~/app/app.config";
 
 export default function Header() {
 

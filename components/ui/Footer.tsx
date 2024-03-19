@@ -1,9 +1,34 @@
 import Link from "next/link";
+import { Fragment } from "react";
 import { FaEnvelope, FaFacebook, FaPhone } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import { NAV_LINKS } from "~/app/app.config";
 import FooterContainer from "~/components/ui/FooterContainer";
 
 export default function Footer() {
+
+    const _renderFooterLinks = () => {
+        return NAV_LINKS.map((link, index) => (
+            <Fragment key={index + "fragment"}>
+                <Link href={link.href} key={index} className="app-footer-sitemap-link">
+                    {link.text}
+                </Link>
+
+                {link.subnav && (
+                    <ul key={index + "subnav"} className="app-footer-sitemap-subnav">
+                        {link.subnav.map((sublink, subindex) => (
+                            <li key={subindex}>
+                                <Link href={sublink.href} key={subindex + "link"} className="app-footer-sitemap-sublink">
+                                    {sublink.text}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </Fragment>
+        ))
+    }
+
     return (
         <footer className="app-footer">
             <img src="/footerwaves.svg" className="app-footer-wave" />
@@ -11,40 +36,7 @@ export default function Footer() {
 
                 <FooterContainer title="Sitemap">
                     <nav className="app-footer-sitemap">
-                        <Link href="/" className="app-footer-sitemap-link">
-                            Home
-                        </Link>
-                        <Link href="/about" className="app-footer-sitemap-link">
-                            About
-                        </Link>
-                        <Link href="/services" className="app-footer-sitemap-link">
-                            Services
-                        </Link>
-                        <ul className="app-footer-sitemap-subnav">
-                            <li>
-                                <Link href="/services/interior" className="app-footer-sitemap-sublink">
-                                    Interior Design
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services/remodel" className="app-footer-sitemap-sublink">
-                                    Remodel
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services/painting" className="app-footer-sitemap-sublink">
-                                    Painting
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services/demo" className="app-footer-sitemap-sublink">
-                                    Demolition
-                                </Link>
-                            </li>
-                        </ul>
-                        <Link href="/contact" className="app-footer-sitemap-link">
-                            Contact
-                        </Link>
+                        {_renderFooterLinks()}
                     </nav>
                 </FooterContainer>
 
