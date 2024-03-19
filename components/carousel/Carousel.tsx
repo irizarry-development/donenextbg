@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
 
 const carouselItems = [
@@ -59,6 +59,13 @@ export default function Carousel() {
         )
 
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActive(active + 1 > carouselItems.length - 1 ? 0 : active + 1);
+        }, 7000);
+        return () => clearInterval(interval);
+    })
     
     return (
         <section className="carousel">
