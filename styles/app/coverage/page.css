@@ -3,6 +3,7 @@
 }
 
 .coverage-page .coverage-details {
+    display: grid;
     padding: 2rem;
     font-size: 1.4rem;
 }

@@ -2,6 +2,7 @@
 
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import { Circle } from "~/components/map/Circle";
+import Button from "~/components/ui/Button";
 
 export default function CoveragePage() {
 
@@ -55,6 +56,16 @@ export default function CoveragePage() {
                     <li>Edmonton</li>
                     <li>And more!</li>
                 </ul>
+                <p>
+                    If you don't see your area listed, please contact us to see if we can help you.
+                    
+                </p>
+                <Button
+                        text="Contact Us"
+                        href="/contact"
+                        size="large"
+                        color="primary"
+                    />
             </section>
         </section>
     )
