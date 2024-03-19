@@ -66,7 +66,7 @@ import {
     useEffect(() => {
       if (radius === undefined || radius === null) return;
       if (radius !== circle.getRadius()) circle.setRadius(radius);
-    }, [radius]);
+    }, [radius, circle]);
   
     const map = useContext(GoogleMapsContext)?.map;
   
@@ -84,7 +84,7 @@ import {
       return () => {
         circle.setMap(null);
       };
-    }, [map]);
+    }, [map, circle]);
   
     // attach and re-attach event-handlers when any of the properties change
     useEffect(() => {
