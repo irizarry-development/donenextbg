@@ -61,7 +61,7 @@ import {
     useEffect(() => {
       if (!center) return;
       if (!latLngEquals(center, circle.getCenter())) circle.setCenter(center);
-    }, [center]);
+    }, [center, circle]);
   
     useEffect(() => {
       if (radius === undefined || radius === null) return;
