@@ -1,6 +1,6 @@
 .jumbotron {
     display: grid;
-    margin: 16rem 2rem 12rem;
+    padding: 8rem 2rem;
 }
 
 .jumbotron h1 {

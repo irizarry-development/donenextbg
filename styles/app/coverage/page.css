@@ -1,0 +1,15 @@
+.coverage-page {
+    display: grid;
+}
+
+.coverage-page .coverage-details {
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.coverage-page .coverage-details h1 {
+    font-family: Erica One, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
