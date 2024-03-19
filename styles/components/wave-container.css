@@ -1,12 +1,14 @@
 .wave-container {
     display: grid;
-    grid-template-rows: 4rem 1fr 4rem;
+    position: relative;
+    margin: 4rem 0;
 }
 
 .wave-container .top-wave,
 .wave-container .bottom-wave {
     height: 4rem;
     width: 100%;
+    position: absolute;
 }
 
 .wave-container .top-wave path,
@@ -15,11 +17,11 @@
 }
 
 .wave-container .top-wave {
-    align-self: end;
+    top: -3.9rem;
 }
 
 .wave-container .bottom-wave {
-    align-self: start;
+    bottom: -3.9rem;
 }
 
 .wave-container .wave-content {
@@ -45,4 +47,6 @@
 
 .wave-container .wave-content .wave-content-body {
     margin-bottom: 4rem;
+    display: grid;
+    row-gap: 2rem;
 }

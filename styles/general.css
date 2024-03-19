@@ -6,3 +6,34 @@ html {
 .app-body {
     min-height: 100vh;
 }
+
+.btn {
+    padding: 1.6rem 3.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn.primary {
+    background: #0099ff;
+    color: #fff;
+    border: none;
+}
+
+.btn.primary:hover {
+    background: #0077cc;
+}
+
+.btn.secondary {
+    background: #f2f2f2;
+    color: #0099ff;
+    border: 0.2rem solid #0099ff;
+}
+
+.btn.secondary:hover {
+    background: #e6e6e6;
+}

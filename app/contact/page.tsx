@@ -1,7 +1,6 @@
 "use client";
 
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
-import { Fragment } from "react";
 import { FaEnvelopeCircleCheck, FaPhoneFlip } from "react-icons/fa6";
 import { Circle } from "~/components/map/Circle";
 

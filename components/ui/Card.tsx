@@ -13,7 +13,7 @@ export default function Card({
 }: CardProps) {
     return (
         <section className="card">
-            <Image className="card-image" src={`/${image}`} alt="Interior Design" width={200} height={200} />
+            <Image className="card-image" src={`/${image}`} alt={`Image of ${title}`} width={200} height={200} />
             <h2 className="card-title">
                 {title}
             </h2>

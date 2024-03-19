@@ -1,22 +1,108 @@
 .app-footer {
     display: grid;
-    grid-template-rows: 4rem 1fr;
+    position: relative;
+    margin-top: 5rem;
 }
 
 .app-footer-wave {
-    height: 4rem;
+    height: 8rem;
     width: 100%;
-    align-self: end;
+    position: absolute;
+    top: -8rem;
 }
 
 .app-footer .app-footer-content {
-    background: #0099ff;
+    background: #001122;
     padding: 2rem;
     display: grid;
+    row-gap: 2rem;
 }
 
-.app-footer .app-footer-content p {
+.app-footer .app-footer-content .app-footer-container-title {
+    font-size: 2.4rem;
+    color: #fff;
+    font-family: Erica One, sans-serif;
+    margin: 0.8rem 0;
+}
+
+.app-footer-sitemap {
+    display: grid;
+    row-gap: 0.4rem;
+}
+
+.app-footer-sitemap .app-footer-sitemap-link {
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.app-footer-sitemap .app-footer-sitemap-link:hover {
+    color: #0099ff;
+}
+
+.app-footer-sitemap .app-footer-sitemap-subnav {
+    display: grid;
+    margin: 0;
+    padding-left: 1.4rem;
     color: white;
-    font-size: 1.5rem;
+}
+
+.app-footer-sitemap .app-footer-sitemap-subnav .app-footer-sitemap-sublink {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.app-footer-sitemap .app-footer-sitemap-subnav .app-footer-sitemap-sublink:hover {
+    color: #0099ff;
+}
+
+.app-footer-socials,
+.app-footer-contact {
+    display: grid;
+    row-gap: 0.8rem;
+}
+
+.app-footer-socials .app-footer-socials-link,
+.app-footer-contact .app-footer-contact-link {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2.4rem 1fr;
+}
+
+.app-footer-socials .app-footer-socials-link:hover,
+.app-footer-contact .app-footer-contact-link:hover {
+    color: #0099ff;
+}
+
+.app-footer-socials .app-footer-socials-link .app-footer-social-icon,
+.app-footer-contact .app-footer-contact-link .app-footer-contact-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.app-footer-copyright {
+    font-size: 1.4rem;
+    color: #fff;
     text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.app-footer-credit {
+    font-size: 1rem;
+    color: #b6b6b6;
+    text-align: center;
+    margin: 0;
+}
+
+.app-footer-credit a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }

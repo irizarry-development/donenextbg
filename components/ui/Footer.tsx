@@ -1,9 +1,84 @@
+import Link from "next/link";
+import { FaEnvelope, FaFacebook, FaPhone } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import FooterContainer from "~/components/ui/FooterContainer";
+
 export default function Footer() {
     return (
         <footer className="app-footer">
-            <svg className="app-footer-wave" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,256L18.5,245.3C36.9,235,74,213,111,213.3C147.7,213,185,235,222,208C258.5,181,295,107,332,64C369.2,21,406,11,443,10.7C480,11,517,21,554,69.3C590.8,117,628,203,665,208C701.5,213,738,139,775,128C812.3,117,849,171,886,181.3C923.1,192,960,160,997,160C1033.8,160,1071,192,1108,192C1144.6,192,1182,160,1218,122.7C1255.4,85,1292,43,1329,32C1366.2,21,1403,43,1422,53.3L1440,64L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>
+            <img src="/footerwaves.svg" className="app-footer-wave" />
             <section className="app-footer-content">
-                <p>© 2024 DoneNextBG</p>
+
+                <FooterContainer title="Sitemap">
+                    <nav className="app-footer-sitemap">
+                        <Link href="/" className="app-footer-sitemap-link">
+                            Home
+                        </Link>
+                        <Link href="/about" className="app-footer-sitemap-link">
+                            About
+                        </Link>
+                        <Link href="/services" className="app-footer-sitemap-link">
+                            Services
+                        </Link>
+                        <ul className="app-footer-sitemap-subnav">
+                            <li>
+                                <Link href="/services/interior" className="app-footer-sitemap-sublink">
+                                    Interior Design
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/services/remodel" className="app-footer-sitemap-sublink">
+                                    Remodel
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/services/painting" className="app-footer-sitemap-sublink">
+                                    Painting
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/services/demo" className="app-footer-sitemap-sublink">
+                                    Demolition
+                                </Link>
+                            </li>
+                        </ul>
+                        <Link href="/contact" className="app-footer-sitemap-link">
+                            Contact
+                        </Link>
+                    </nav>
+                </FooterContainer>
+
+                <FooterContainer title="Socials">
+                    <section className="app-footer-socials">
+                        <a href="https://facebook.com" className="app-footer-socials-link">
+                            <FaFacebook className="app-footer-social-icon" /> Facebook
+                        </a>
+                        <a href="https://instagram.com" className="app-footer-socials-link">
+                            <FaInstagram className="app-footer-social-icon" /> Instagram
+                        </a>
+                    </section>
+                </FooterContainer>
+
+                <FooterContainer title="Contact Us">
+                    <section className="app-footer-contact">
+                        <a href="tel:555-555-5555" className="app-footer-contact-link">
+                            <FaPhone className="app-footer-contact-icon" /> 555-555-5555
+                        </a>
+                        <a href="mailto:hello@email.com " className="app-footer-contact-link">
+                            <FaEnvelope className="app-footer-contact-icon" /> hello@email.com
+                        </a>
+                    </section>
+                </FooterContainer>
+
+                <FooterContainer>
+                    <p className="app-footer-copyright">
+                        &copy; 2024 DoneNextBg
+                    </p>
+                    <p className="app-footer-credit">
+                        Made with ❤️ by <a href="https://irizarry.dev">Irizarry.dev</a>
+                    </p>
+                </FooterContainer>
+
             </section>
         </footer>
     )

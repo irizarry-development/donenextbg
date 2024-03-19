@@ -12,3 +12,21 @@
     display: grid;
     justify-items: center;
 }
+
+.card-masonry .card .card-image {
+    height: 24rem;
+    width: 24rem;
+}
+
+.card-masonry .card .card-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-masonry .card .card-description {
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: normal;
+    text-align: center;
+}
