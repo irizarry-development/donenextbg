@@ -16,7 +16,7 @@ export default function Header() {
           <section className="app-header-logo" />
           <nav className={`app-navigation ${isMenuOpen && 'open'}`}>
             <section className="app-navigation-content">
-              {NAV_LINKS.map((link, index) => <Link onClick={_handleMenu} href={link.href} key={index} className="app-navigation-link">{link.text} {link.component}</Link>)}
+              {NAV_LINKS.map((link, index) => <Link onClick={_handleMenu} href={link.href} key={index} className="app-navigation-link">{link.text} {link.iconComponent}</Link>)}
             </section>
           </nav>
           <FaBars 

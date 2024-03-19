@@ -3,9 +3,6 @@ import Container from "~/components/containers/Container";
 import Jumbotron from "~/components/containers/Jumbotron";
 import WaveContainer from "~/components/containers/WaveContainer";
 import CardMasonry from "~/components/ui/CardMasonry";
-
-import { FaPhoneFlip } from "react-icons/fa6";
-import { FaEnvelopeCircleCheck } from "react-icons/fa6";
 import Carousel from "~/components/carousel/Carousel";
 import Button from "~/components/ui/Button";
 import Card from "~/components/ui/Card";

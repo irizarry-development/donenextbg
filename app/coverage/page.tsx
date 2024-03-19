@@ -3,18 +3,11 @@
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import { Circle } from "~/components/map/Circle";
 import Button from "~/components/ui/Button";
+import { COVERAGE_AREAS, COVERAGE_DETAIL_HEADER, COVERAGE_DETAIL_TEXT, COVERAGE_DISCLAIMER, DEFAULT_MAP_CENTER, DEFAULT_MAP_ZOOM, MAP_CIRCLE_STROKE_COLOR, MAP_CIRCLE_FILL_COLOR, MAP_CIRCLE_FILL_OPACITY, MAP_CIRCLE_RADIUS, MAP_CIRCLE_STROKE_OPACITY, MAP_CIRCLE_STROKE_WEIGHT, COVERAGE_CTA_BUTTON_TEXT, COVERAGE_CTA_BUTTON_HREF } from "~/app/app.config";
 
 export default function CoveragePage() {
-
-    const DEFAULT_MAP_CENTER = {
-        lat: 36.9636545,
-        lng: -86.4805194
-    }
-
     return (
-
         <section className="coverage-page">
-
             <section className="coverage-map">
                 <APIProvider
                     apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
@@ -22,50 +15,39 @@ export default function CoveragePage() {
                     <Map
                         style={{ width: '100vw', height: '45rem' }}
                         defaultCenter={DEFAULT_MAP_CENTER}
-                        defaultZoom={7}
+                        defaultZoom={DEFAULT_MAP_ZOOM}
                         gestureHandling={'cooperative'}
                         disableDefaultUI={true}
                     >
                         <Circle
-                            radius={120000}
+                            radius={MAP_CIRCLE_RADIUS}
                             center={DEFAULT_MAP_CENTER}
-                            strokeColor={'#0c4cb3'}
-                            strokeOpacity={1}
-                            strokeWeight={3}
-                            fillColor={'#3b82f6'}
-                            fillOpacity={0.3}
+                            strokeColor={MAP_CIRCLE_STROKE_COLOR}
+                            strokeOpacity={MAP_CIRCLE_STROKE_OPACITY}
+                            strokeWeight={MAP_CIRCLE_STROKE_WEIGHT}
+                            fillColor={MAP_CIRCLE_FILL_COLOR}
+                            fillOpacity={MAP_CIRCLE_FILL_OPACITY}
                         />
                     </Map>
                 </APIProvider>
             </section>
             <section className="coverage-details">
-                <h1>Our Coverage Area</h1>
+                <h1>{COVERAGE_DETAIL_HEADER}</h1>
                 <p>
-                    We are proud to serve the following areas:
+                    {COVERAGE_DETAIL_TEXT}
                 </p>
                 <ul>
-                    <li>Bowling Green</li>
-                    <li>Glasgow</li>
-                    <li>Scottsville</li>
-                    <li>Franklin</li>
-                    <li>Portland</li>
-                    <li>Lebanon</li>
-                    <li>Springfield</li>
-                    <li>Elizabethtown</li>
-                    <li>Greensburg</li>
-                    <li>Edmonton</li>
-                    <li>And more!</li>
+                    {COVERAGE_AREAS.map((area, index) => <li key={index}>{area}</li>)}
                 </ul>
                 <p>
-                    If your area is not listed, please contact us to see if we can help you.
-                    
+                    {COVERAGE_DISCLAIMER}
                 </p>
                 <Button
-                        text="Contact Us"
-                        href="/contact"
-                        size="large"
-                        color="primary"
-                    />
+                    text={COVERAGE_CTA_BUTTON_TEXT}
+                    href={COVERAGE_CTA_BUTTON_HREF}
+                    size="large"
+                    color="primary"
+                />
             </section>
         </section>
     )
