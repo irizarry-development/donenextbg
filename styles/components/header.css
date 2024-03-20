@@ -27,18 +27,17 @@
 }
 
 .app-header .app-navigation {
-    top: 8.1rem;
+    top: -20rem;
     display: grid;
     position: absolute;
     width: 100vw;
-    right: -100vw;
-    transition: 150ms ease-in-out;
+    transition: 300ms ease-in-out;
     background: white;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .app-header .app-navigation.open {
-    transform: translateX(-100vw);
+    transform: translateY(28.1rem);
 }
 
 .app-header .app-navigation .app-navigation-content {
