@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FaCircleChevronLeft, FaCircleChevronRight } from "react-icons/fa6";
+import { CAROUSEL_DELAY } from "~/app/app.config";
 
 const carouselItems = [
     {
@@ -63,7 +64,7 @@ export default function Carousel() {
     useEffect(() => {
         const interval = setInterval(() => {
             setActive(active + 1 > carouselItems.length - 1 ? 0 : active + 1);
-        }, 7000);
+        }, CAROUSEL_DELAY * 1000);
         return () => clearInterval(interval);
     })
     

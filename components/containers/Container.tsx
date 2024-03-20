@@ -4,7 +4,7 @@ interface ContainerProps {
     readonly children?: React.ReactNode;
     readonly title: string;
     readonly subtitle: string;
-    readonly image: string;
+    readonly image?: string;
 }
 
 export default function Container({
@@ -15,7 +15,11 @@ export default function Container({
 }: ContainerProps) {
     return (
         <section className="container">
-            <Image className="container-image" src={`/${image}`} alt={title} width={240} height={240} />
+            { 
+                image
+                    &&
+                <Image className="container-image" src={`/${image}`} alt={title} width={240} height={240} />
+            }
             <section className="container-title">
                 <h1>{title}</h1>
                 <p>{subtitle}</p>

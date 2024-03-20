@@ -9,6 +9,7 @@ interface CardProps {
         readonly label: string;
         readonly href: string;
     }
+    readonly key: number;
 }
 
 export default function Card({

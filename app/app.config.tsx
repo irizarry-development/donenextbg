@@ -29,8 +29,14 @@ export const NAV_LINKS: NavLink[] = [
     { text: 'Contact', href: '/contact', iconComponent: <FaPhone /> }
 ]
 
+export const CONTACT_PHONE_NUMBER = '123-456-7890';
+export const CONTACT_EMAIL = 'hello@irizarry.dev'
+
+export const FACEBOOK_URL = 'https://facebook.com';
+export const INSTAGRAM_URL = 'https://instagram.com';
+
 /**
- * 
+ *
  * Main Page Configuration
  * 
  */
@@ -38,6 +44,57 @@ export const NAV_LINKS: NavLink[] = [
 export const JUMBOTRON_TEXT: string = "The premier house upscaling service in the greater Bowling Green area.";
 export const JUMBOTRON_BUTTON_TEXT: string = "Get Started";
 export const JUMBOTRON_BUTTON_HREF: string = "/services";
+
+interface ServiceCard {
+    readonly title: string
+    readonly description: string
+    readonly image: string
+    readonly cta: {
+        readonly label: string
+        readonly href: string
+    }
+}
+
+export const SERVICE_CARDS: ServiceCard[] = [
+    {
+        title: 'Interior Design',
+        description: 'From picture hanging to furniture arrangement, we can help you get your house looking its best.',
+        image: 'interiordesign.svg',
+        cta: {
+            label: 'Learn About Interior Design',
+            href: '/services/interior'
+        }
+    },
+    {
+        title: 'Remodel',
+        description: 'Want to freshen things up? Hire us for your next remodel project, big or small.',
+        image: 'remodel.svg',
+        cta: {
+            label: 'See Our Remodel Services',
+            href: '/services/remodel'
+        }
+    },
+    {
+        title: 'Painting',
+        description: 'We can help you with your next painting project. From walls to cabinets, we have you covered.',
+        image: 'painting.svg',
+        cta: {
+            label: 'View Our Painting Services',
+            href: '/services/painting'
+        }
+    },
+    {
+        title: 'Demolition',
+        description: 'Time for a fresh start? Our team of experts can help you with your next demo project.',
+        image: 'demo.svg',
+        cta: {
+            label: 'Learn About Demolition Services',
+            href: '/services/demolition'
+        }
+    }
+]
+
+export const CAROUSEL_DELAY: number = 7;
 
 /**
  * 

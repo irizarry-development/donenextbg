@@ -24,6 +24,10 @@
     bottom: -3.9rem;
 }
 
+.wave-container .wave-image {
+    place-self: center;
+}
+
 .wave-container .wave-content {
     background: #e0e0e0;
     padding: 0 2rem;

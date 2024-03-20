@@ -6,6 +6,7 @@ import CardMasonry from "~/components/ui/CardMasonry";
 import Carousel from "~/components/carousel/Carousel";
 import Button from "~/components/ui/Button";
 import Card from "~/components/ui/Card";
+import { CONTACT_EMAIL, CONTACT_PHONE_NUMBER, SERVICE_CARDS } from "~/app/app.config";
 
 export default function Home() {
   return (
@@ -16,90 +17,37 @@ export default function Home() {
         subtitle="We offer a wide variety of services to help you get your house looking its best."
       >
         <CardMasonry>
-            <Card 
-                title="Interior Design"
-                description="From picture hanging to furniture arrangement, we can help you get your house looking its best."
-                image="interiordesign.svg"
-                cta={
-                  {
-                    label: "Learn More",
-                    href: "/services/interior"
-                  }
-                }
-            />
-            <Card 
-                title="Remodel"
-                description="Want to freshen things up? Hire us for your next remodel project, big or small."
-                image="remodel.svg"
-                cta={
-                  {
-                    label: "Learn More",
-                    href: "/services/remodel"
-                  }
-                }
-            />
-            <Card 
-                title="Painting"
-                description="We can help you with your next painting project. From walls to cabinets, we have you covered."
-                image="painting.svg"
-                cta={
-                  {
-                    label: "Learn More",
-                    href: "/services/painting"
-                  }
-                }
-            />
-            <Card
-                title="Demolition"
-                description="Time for a fresh start? Our team of experts can help you with your next demo project."
-                image="demo.svg"
-                cta={
-                  {
-                    label: "Learn More",
-                    href: "/services/demolition"
-                  }
-                }
-            />
+            {SERVICE_CARDS.map((card, index) => <Card key={index} {...card} />)}
         </CardMasonry>
-        <Button 
-          text="Get Started" 
-          href="/services" 
-          size="large"
-          color="primary"
-        />
-        <Button
-          text="Learn More"
-          href="/services"
-          size="large"
-          color="secondary"
-        />
       </WaveContainer>
       <Container
-        title="Our Process"
-        subtitle="Our process is simple and effective. We work with you to ensure that your house is looking its best."
-        image="worktogether.svg"
-      />
-      <WaveContainer
         title="Our Work"
         subtitle="Check out some of our work to see what we can do for you."
       >
         <Carousel />
+      </Container>
+      <WaveContainer
+        title="Our Process"
+        subtitle="Our process is simple and effective. We work with you to ensure that your house is looking its best."
+        image="worktogether.svg"
+      >
+        <Button text="Learn About Us" href="/about" size="large" color="primary" />
       </WaveContainer>
       <Container
-        title="Contact Us"
+        title="Ready to Start?"
         subtitle="Contact us today to get started on your next project."
         image="contactus.svg"
       >
         <section className="contact-methods">
           <Button
             text="Call Us"
-            href="tel:123-456-7890"
+            href={`tel:${CONTACT_PHONE_NUMBER}`}
             size="large"
             color="primary"
           />
           <Button
             text="Email Us"
-            href="mailto:test@irizarry.dev"
+            href={`mailto:${CONTACT_EMAIL}`}
             size="large"
             color="secondary"
           />
