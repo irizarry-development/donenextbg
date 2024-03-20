@@ -1,15 +1,21 @@
 import Image from 'next/image';
+import Button from './Button';
 
 interface CardProps {
     readonly title: string;
     readonly description: string;
     readonly image: string;
+    readonly cta?: {
+        readonly label: string;
+        readonly href: string;
+    }
 }
 
 export default function Card({
     title,
     description,
-    image
+    image,
+    cta
 }: CardProps) {
     return (
         <section className="card">
@@ -20,6 +26,15 @@ export default function Card({
             <p className="card-description">
                 {description}
             </p>
+            {
+                cta &&
+                    <Button
+                        text={cta.label}
+                        href={cta.href}
+                        size='large'
+                        color='primary'
+                    />
+            }
         </section>
     )
 }

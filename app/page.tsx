@@ -20,21 +20,45 @@ export default function Home() {
                 title="Interior Design"
                 description="From picture hanging to furniture arrangement, we can help you get your house looking its best."
                 image="interiordesign.svg"
+                cta={
+                  {
+                    label: "Learn More",
+                    href: "/services/interior-design"
+                  }
+                }
             />
             <Card 
                 title="Remodel"
                 description="Want to freshen things up? Hire us for your next remodel project, big or small."
                 image="remodel.svg"
+                cta={
+                  {
+                    label: "Learn More",
+                    href: "/services/remodel"
+                  }
+                }
             />
             <Card 
                 title="Painting"
                 description="We can help you with your next painting project. From walls to cabinets, we have you covered."
                 image="painting.svg"
+                cta={
+                  {
+                    label: "Learn More",
+                    href: "/services/painting"
+                  }
+                }
             />
             <Card
                 title="Demolition"
                 description="Time for a fresh start? Our team of experts can help you with your next demo project."
                 image="demo.svg"
+                cta={
+                  {
+                    label: "Learn More",
+                    href: "/services/demolition"
+                  }
+                }
             />
         </CardMasonry>
         <Button 
