@@ -1,14 +1,14 @@
 .app-footer {
     display: grid;
     position: relative;
-    margin-top: 8rem;
+    margin-top: 16rem;
 }
 
 .app-footer-wave {
-    height: 8rem;
+    height: 16rem;
     width: 100%;
     position: absolute;
-    top: -8rem;
+    top: -16rem;
 }
 
 .app-footer .app-footer-content {
