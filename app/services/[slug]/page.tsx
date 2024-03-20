@@ -17,7 +17,7 @@ export default async function Service({ params }: Props) {
     } = await getService(slug)
 
     return (
-        <article>
+        <article className="service-article">
             <h1>{title}</h1>
             <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
             <p>{date}</p>

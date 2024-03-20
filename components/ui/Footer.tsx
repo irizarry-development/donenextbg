@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Fragment } from "react";
 import { FaEnvelope, FaFacebook, FaPhone } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import { CONTACT_EMAIL, CONTACT_PHONE_NUMBER, FACEBOOK_URL, INSTAGRAM_URL, NAV_LINKS } from "~/app/app.config";
+import { COMPANY_NAME, CONTACT_EMAIL, CONTACT_PHONE_NUMBER, FACEBOOK_URL, INSTAGRAM_URL, NAV_LINKS } from "~/app/app.config";
 import FooterContainer from "~/components/ui/FooterContainer";
 
 export default function Footer() {
@@ -64,7 +64,7 @@ export default function Footer() {
 
                 <FooterContainer>
                     <p className="app-footer-copyright">
-                        &copy; { new Date().getFullYear() } DoneNextBg
+                        &copy; { new Date().getFullYear() } {COMPANY_NAME}
                     </p>
                     <p className="app-footer-credit">
                         Made with ❤️ by <a href="https://irizarry.dev">Irizarry.dev</a>

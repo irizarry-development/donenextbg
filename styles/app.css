@@ -9,3 +9,5 @@
 
 @import 'app/page.css';
 @import 'app/coverage/page.css';
+@import 'app/services/page.css';
+@import 'app/services/[slug]/page.css'

@@ -22,7 +22,7 @@ export const NAV_LINKS: NavLink[] = [
             { text: 'Interior Design', href: '/services/interior', iconComponent: <FaHouse /> },
             { text: 'Remodel', href: '/services/remodel', iconComponent: <FaHouse /> },
             { text: 'Painting', href: '/services/painting', iconComponent: <FaHouse /> },
-            { text: 'Demolition', href: '/services/demo', iconComponent: <FaHouse /> }
+            { text: 'Demolition', href: '/services/demolition', iconComponent: <FaHouse /> }
         ]
     },
     { text: 'Coverage Area', href: '/coverage', iconComponent: <FaMapLocationDot /> },
@@ -34,6 +34,8 @@ export const CONTACT_EMAIL = 'hello@irizarry.dev'
 
 export const FACEBOOK_URL = 'https://facebook.com';
 export const INSTAGRAM_URL = 'https://instagram.com';
+
+export const COMPANY_NAME = 'DoneNextBG';
 
 /**
  *
