@@ -23,7 +23,7 @@ export default function Home() {
                 cta={
                   {
                     label: "Learn More",
-                    href: "/services/interior-design"
+                    href: "/services/interior"
                   }
                 }
             />
