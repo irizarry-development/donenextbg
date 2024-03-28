@@ -3,7 +3,8 @@
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import { Circle } from "~/components/map/Circle";
 import Button from "~/components/ui/Button";
-import { COVERAGE_AREAS, COVERAGE_DETAIL_HEADER, COVERAGE_DETAIL_TEXT, COVERAGE_DISCLAIMER, DEFAULT_MAP_CENTER, DEFAULT_MAP_ZOOM, MAP_CIRCLE_STROKE_COLOR, MAP_CIRCLE_FILL_COLOR, MAP_CIRCLE_FILL_OPACITY, MAP_CIRCLE_RADIUS, MAP_CIRCLE_STROKE_OPACITY, MAP_CIRCLE_STROKE_WEIGHT, COVERAGE_CTA_BUTTON_TEXT, COVERAGE_CTA_BUTTON_HREF } from "~/app/app.config";
+import { COVERAGE_AREAS, COVERAGE_DETAIL_HEADER, COVERAGE_DETAIL_TEXT, COVERAGE_DISCLAIMER, DEFAULT_MAP_CENTER, DEFAULT_MAP_ZOOM, COVERAGE_CTA_BUTTON_TEXT, COVERAGE_CTA_BUTTON_HREF, COVERAGE_POLYGONS } from "~/app/app.config";
+import { Polygon } from "~/components/map/Polygon";
 
 export default function CoveragePage() {
     return (
@@ -19,14 +20,9 @@ export default function CoveragePage() {
                         gestureHandling={'cooperative'}
                         disableDefaultUI={true}
                     >
-                        <Circle
-                            radius={MAP_CIRCLE_RADIUS}
-                            center={DEFAULT_MAP_CENTER}
-                            strokeColor={MAP_CIRCLE_STROKE_COLOR}
-                            strokeOpacity={MAP_CIRCLE_STROKE_OPACITY}
-                            strokeWeight={MAP_CIRCLE_STROKE_WEIGHT}
-                            fillColor={MAP_CIRCLE_FILL_COLOR}
-                            fillOpacity={MAP_CIRCLE_FILL_OPACITY}
+                        <Polygon 
+                            encodedPaths={COVERAGE_POLYGONS}
+                            strokeWeight={1.5}
                         />
                     </Map>
                 </APIProvider>
