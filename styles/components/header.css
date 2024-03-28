@@ -3,36 +3,36 @@
     display: grid;
     grid-template-columns: 24rem 6rem;
     justify-content: space-between;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 0.4rem solid var(--gold-100);
     position: fixed;
     width: 100%;
     top: 0;
-    background: white;
+    background: var(--gray-100);
     z-index: 1000;
 }
 
 .app-header .app-header-logo {
     width: 20rem;
     height: 6rem;
-    background: #e0e0e0;
+    background: var(--gray-200);
     place-self: center;
 }
 
 .app-header .app-menu-toggle {
     height: 3rem;
     width: 3rem;
-    fill: #0099ff;
+    fill: var(--gold-100);
     place-self: center;
     cursor: pointer;
 }
 
 .app-header .app-navigation {
-    top: 8.1rem;
+    top: 8.4rem;
     display: grid;
     position: absolute;
     width: 100vw;
     height: 0;
-    transition: 300ms ease-in-out;
+    transition: 200ms ease-in-out;
     background: white;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
     overflow-y: hidden;
@@ -49,7 +49,7 @@
 
 .app-header .app-navigation .app-navigation-content .app-navigation-link {
     font-size: 1.6rem;
-    color: #333;
+    color: var(--gray-800);
     text-decoration: none;
     transition: 150ms ease-in-out;
     padding: 1rem 1.4rem;
@@ -59,6 +59,5 @@
 }
 
 .app-header .app-navigation .app-navigation-content .app-navigation-link:hover {
-    background: #0099ff;
-    color: white;
+    background: var(--pink-100);
 }

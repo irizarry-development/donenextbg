@@ -61,7 +61,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     {
         title: 'Interior Design',
         description: 'From picture hanging to furniture arrangement, we can help you get your house looking its best.',
-        image: 'interiordesign.svg',
+        image: 'interiordesign.jpeg',
         cta: {
             label: 'Learn About Interior Design',
             href: '/services/interior'
@@ -70,7 +70,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     {
         title: 'Remodel',
         description: 'Want to freshen things up? Hire us for your next remodel project, big or small.',
-        image: 'remodel.svg',
+        image: 'kitchenremodel.jpeg',
         cta: {
             label: 'See Our Remodel Services',
             href: '/services/remodel'
@@ -79,19 +79,10 @@ export const SERVICE_CARDS: ServiceCard[] = [
     {
         title: 'Painting',
         description: 'We can help you with your next painting project. From walls to cabinets, we have you covered.',
-        image: 'painting.svg',
+        image: 'bathroomremodel.jpeg',
         cta: {
             label: 'View Our Painting Services',
             href: '/services/painting'
-        }
-    },
-    {
-        title: 'Demolition',
-        description: 'Time for a fresh start? Our team of experts can help you with your next demo project.',
-        image: 'demo.svg',
-        cta: {
-            label: 'Learn About Demolition Services',
-            href: '/services/demolition'
         }
     }
 ]

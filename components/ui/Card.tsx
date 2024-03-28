@@ -33,7 +33,7 @@ export default function Card({
                         text={cta.label}
                         href={cta.href}
                         size='large'
-                        color='primary'
+                        color='secondary'
                     />
             }
         </section>

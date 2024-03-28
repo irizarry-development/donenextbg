@@ -1,10 +1,13 @@
 .container {
-    padding: 0 2rem 4rem;
+    padding: 2rem 2rem 4rem;
     display: grid;
 }
 
 .container .container-image {
+    width: 100%;
+    height: auto;
     place-self: center;
+    margin: 0 0 4rem;
 }
 
 .container .container-title {
@@ -13,12 +16,12 @@
 
 .container .container-title h1 {
     font-size: 3rem;
-    font-family: Erica One, sans-serif;
+    font-family: var(--semi-bold-font);
     text-align: center;
 }
 
 .container .container-title p {
     font-size: 1.5rem;
-    color: #333;
+    color: var(--gray-800);
     text-align: center;
 }

@@ -19,7 +19,7 @@ export default function RootLayout({
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&family=Lora:wght@600&family=Raleway:ital@0;1&display=swap" rel="stylesheet" />
       </head>
       <body className="app-body">
         <Header />

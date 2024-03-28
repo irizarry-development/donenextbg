@@ -12,7 +12,7 @@
 }
 
 .app-footer .app-footer-content {
-    background: #001122;
+    background: var(--pink-600);
     padding: 2rem;
     display: grid;
     row-gap: 2rem;
@@ -21,7 +21,7 @@
 .app-footer .app-footer-content .app-footer-container-title {
     font-size: 2.4rem;
     color: #fff;
-    font-family: Erica One, sans-serif;
+    font-family: var(--bold-font);
     margin: 0.8rem 0;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .app-footer-sitemap .app-footer-sitemap-link:hover {
-    color: #0099ff;
+    color: #402312;
 }
 
 .app-footer-sitemap .app-footer-sitemap-subnav {
@@ -56,7 +56,7 @@
 }
 
 .app-footer-sitemap .app-footer-sitemap-subnav .app-footer-sitemap-sublink:hover {
-    color: #0099ff;
+    color: #402312;
 }
 
 .app-footer-socials,
@@ -78,7 +78,7 @@
 
 .app-footer-socials .app-footer-socials-link:hover,
 .app-footer-contact .app-footer-contact-link:hover {
-    color: #0099ff;
+    color: #402312;
 }
 
 .app-footer-socials .app-footer-socials-link .app-footer-social-icon,

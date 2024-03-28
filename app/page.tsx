@@ -29,14 +29,14 @@ export default function Home() {
       <WaveContainer
         title="Our Process"
         subtitle="Our process is simple and effective. We work with you to ensure that your house is looking its best."
-        image="worktogether.svg"
+        image="ourprocess.jpeg"
       >
-        <Button text="Learn About Us" href="/about" size="large" color="primary" />
+        <Button text="Learn About Us" href="/about" size="large" color="secondary" />
       </WaveContainer>
       <Container
         title="Ready to Start?"
         subtitle="Contact us today to get started on your next project."
-        image="contactus.svg"
+        image="contactus.jpeg"
       >
         <section className="contact-methods">
           <Button

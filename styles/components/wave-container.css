@@ -13,7 +13,7 @@
 
 .wave-container .top-wave path,
 .wave-container .bottom-wave path {
-    fill: #e0e0e0;
+    fill: var(--pink-100);
 }
 
 .wave-container .top-wave {
@@ -26,11 +26,13 @@
 
 .wave-container .wave-image {
     place-self: center;
+    height: auto;
+    width: 100%;
 }
 
 .wave-container .wave-content {
-    background: #e0e0e0;
-    padding: 0 2rem;
+    background: var(--pink-100);
+    padding: 2rem;
     display: grid;
     row-gap: 3rem;
 }
@@ -41,12 +43,12 @@
 
 .wave-container .wave-content .wave-content-title h1 {
     font-size: 3rem;
-    font-family: Erica One, sans-serif;
+    font-family: var(--semi-bold-font);
 }
 
 .wave-container .wave-content .wave-content-title p {
     font-size: 1.5rem;
-    color: #333;
+    color: var(--gray-800);
 }
 
 .wave-container .wave-content .wave-content-body {

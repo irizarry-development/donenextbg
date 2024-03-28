@@ -9,7 +9,7 @@
 }
 
 .coverage-page .coverage-details h1 {
-    font-family: Erica One, sans-serif;
+    font-family: var(--bold-font);
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
