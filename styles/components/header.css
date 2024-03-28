@@ -1,7 +1,7 @@
 .app-header {
     height: 8rem;
     display: grid;
-    grid-template-columns: 24rem 6rem;
+    grid-template-columns: 20rem 12rem;
     justify-content: space-between;
     border-bottom: 0.4rem solid var(--gold-100);
     position: fixed;
@@ -18,12 +18,22 @@
     place-self: center;
 }
 
-.app-header .app-menu-toggle {
-    height: 3rem;
-    width: 3rem;
+.app-header .menu-toggle {
+    align-self: center;
+    display: grid;
+    font-size: 2.2rem;
+    font-family: var(--normal-font);
+    grid-auto-flow: column;
+    column-gap: 0.4rem;
+    text-align: right;
+    cursor: pointer;
+    color: var(--gold-100);
+    text-transform: uppercase;
+}
+
+.app-header .menu-toggle .app-menu-toggle {
     fill: var(--gold-100);
     place-self: center;
-    cursor: pointer;
 }
 
 .app-header .app-navigation {

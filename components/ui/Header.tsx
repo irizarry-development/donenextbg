@@ -19,10 +19,12 @@ export default function Header() {
               {NAV_LINKS.map((link, index) => <Link onClick={_handleMenu} href={link.href} key={index} className="app-navigation-link">{link.text} {link.iconComponent}</Link>)}
             </section>
           </nav>
-          <FaBars 
-            className="app-menu-toggle"
-            onClick={_handleMenu}
-          />
+          <section className="menu-toggle" onClick={_handleMenu}>
+            Menu
+            <FaBars 
+              className="app-menu-toggle"
+            />
+          </section>
         </header>
     )
 }
