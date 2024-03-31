@@ -8,7 +8,7 @@
     z-index: 1000;
 }
 
-@media screen and (min-width: 102.4rem) {
+@media screen and (min-width: 1024px) {
     header.app-header > section.app-header-container {
         max-width: 102.4rem;
         grid-template-columns: 20rem 1fr;
