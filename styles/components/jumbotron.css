@@ -13,9 +13,9 @@
 
 /* Laptop size */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 102.4rem) {
     .jumbotron {
-        max-width: 1024px;
+        max-width: 102.4rem;
         margin: 0 auto;
         grid-template-columns: 1fr 2fr;
     }

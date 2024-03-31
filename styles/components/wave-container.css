@@ -7,10 +7,10 @@
 
 /* Laptop size */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 76.8rem) {
 
     .wave-container .wave-content {
-        max-width: 1024px;
+        max-width: 102.4rem;
         margin: 0 auto;
     }
     
