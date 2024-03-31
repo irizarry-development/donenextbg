@@ -23,7 +23,7 @@ export default function Button({
     }
 
     return (
-        <button>
+        <button className={`btn ${size} ${color}`}>
             {text}
         </button>
     )

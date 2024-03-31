@@ -43,7 +43,11 @@ html {
 
 .app-body {
     min-height: 100vh;
-    margin-top: 8rem;
+    display: grid;
+}
+
+.app-body .app-content {
+    padding-top: 8rem;
 }
 
 .btn {

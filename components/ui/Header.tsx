@@ -13,17 +13,19 @@ export default function Header() {
 
     return (
         <header className="app-header">
-          <section className="app-header-logo" />
-          <nav className={`app-navigation ${isMenuOpen && 'open'}`}>
-            <section className="app-navigation-content">
-              {NAV_LINKS.map((link, index) => <Link onClick={_handleMenu} href={link.href} key={index} className="app-navigation-link">{link.text} {link.iconComponent}</Link>)}
+          <section className="app-header-container">
+            <section className="app-header-logo" />
+            <nav className={`app-navigation ${isMenuOpen && 'open'}`}>
+              <section className="app-navigation-content">
+                {NAV_LINKS.map((link, index) => <Link onClick={_handleMenu} href={link.href} key={index} className="app-navigation-link">{link.text} {link.iconComponent}</Link>)}
+              </section>
+            </nav>
+            <section className="menu-toggle" onClick={_handleMenu}>
+              Menu
+              <FaBars 
+                className="app-menu-toggle"
+              />
             </section>
-          </nav>
-          <section className="menu-toggle" onClick={_handleMenu}>
-            Menu
-            <FaBars 
-              className="app-menu-toggle"
-            />
           </section>
         </header>
     )

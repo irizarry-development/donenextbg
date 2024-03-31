@@ -3,6 +3,34 @@
     display: grid;
 }
 
+/* Laptop size */
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .container.left {
+        grid-template-columns: 3fr 5fr;
+        column-gap: 6rem;
+    }
+
+    .container .container-title h1 {
+        align-self: end;
+    }
+
+    .container .container-image {
+        grid-area: 1 / 3 / 3 / 2;
+    }
+
+    .container.right {
+        grid-template-columns: 5fr 3fr;
+        column-gap: 6rem;
+    }
+}
+
 .container .container-image {
     width: 100%;
     height: auto;

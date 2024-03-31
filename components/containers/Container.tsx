@@ -5,16 +5,18 @@ interface ContainerProps {
     readonly title: string;
     readonly subtitle: string;
     readonly image?: string;
+    readonly alignment?: "left" | "right";
 }
 
 export default function Container({
     children,
     title,
     subtitle,
-    image
+    image,
+    alignment
 }: ContainerProps) {
     return (
-        <section className="container">
+        <section className={`container ${alignment}`}>
             <section className="container-title">
                 <h1>{title}</h1>
                 <p>{subtitle}</p>

@@ -2,6 +2,7 @@
     display: grid;
     position: relative;
     margin-top: 12rem;
+    background: var(--pink-600);
 }
 
 .app-footer-wave {
@@ -12,10 +13,33 @@
 }
 
 .app-footer .app-footer-content {
-    background: var(--pink-600);
     padding: 2rem;
     display: grid;
     row-gap: 2rem;
+}
+
+/* Tablet size */
+
+@media screen and (min-width: 768px) {
+    .app-footer .app-footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 6rem;
+        justify-items: center;
+    }
+
+    .app-footer .app-footer-content .app-footer-container:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Laptop size */
+
+@media screen and (min-width: 1024px) {
+    .app-footer .app-footer-content {
+        max-width: 102.4rem;
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 .app-footer .app-footer-content .app-footer-container-title {

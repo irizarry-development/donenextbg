@@ -2,6 +2,39 @@
     display: grid;
     position: relative;
     margin: 4rem 0;
+    background: var(--pink-100);
+}
+
+/* Laptop size */
+
+@media screen and (min-width: 768px) {
+
+    .wave-container .wave-content {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    
+    .wave-container.left .wave-content {
+        grid-template-columns: 5fr 3fr;
+        column-gap: 6rem;
+    }
+
+    .wave-container.right .wave-content .wave-image {
+        grid-row: 1 / 3;
+    }
+
+    .wave-container.right .wave-content .wave-content-title {
+        align-self: end;
+    }
+
+    .wave-container.right .wave-content .wave-content-body {
+        align-self: start;
+    }
+
+    .wave-container.right .wave-content {
+        grid-template-columns: 5fr 3fr;
+        column-gap: 6rem;
+    }
 }
 
 .wave-container .top-wave,
@@ -31,7 +64,6 @@
 }
 
 .wave-container .wave-content {
-    background: var(--pink-100);
     padding: 2rem;
     display: grid;
     row-gap: 3rem;

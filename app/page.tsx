@@ -23,6 +23,7 @@ export default function Home() {
       <Container
         title="Our Work"
         subtitle="Check out some of our work to see what we can do for you."
+        alignment="left"
       >
         <Carousel />
       </Container>
@@ -30,6 +31,7 @@ export default function Home() {
         title="Our Process"
         subtitle="Our process is simple and effective. We work with you to ensure that your house is looking its best."
         image="ourprocess.jpeg"
+        alignment="right"
       >
         <Button text="Learn About Us" href="/about" size="large" color="secondary" />
       </WaveContainer>
@@ -37,6 +39,7 @@ export default function Home() {
         title="Ready to Start?"
         subtitle="Contact us today to get started on your next project."
         image="contactus.jpeg"
+        alignment="left"
       >
         <section className="contact-methods">
           <Button

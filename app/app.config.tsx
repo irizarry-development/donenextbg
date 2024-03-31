@@ -59,12 +59,12 @@ interface ServiceCard {
 
 export const SERVICE_CARDS: ServiceCard[] = [
     {
-        title: 'Interior Design',
-        description: 'From picture hanging to furniture arrangement, we can help you get your house looking its best.',
-        image: 'interiordesign.jpeg',
+        title: 'Repair',
+        description: 'Need a quick fix? We can help you with your next repair project.',
+        image: 'repair.jpeg',
         cta: {
-            label: 'Learn About Interior Design',
-            href: '/services/interior'
+            label: 'View Our Repair Services',
+            href: '/services/repair'
         }
     },
     {
@@ -79,10 +79,37 @@ export const SERVICE_CARDS: ServiceCard[] = [
     {
         title: 'Painting',
         description: 'We can help you with your next painting project. From walls to cabinets, we have you covered.',
+        image: 'painting.jpeg',
+        cta: {
+            label: 'Our Painting Services',
+            href: '/services/painting'
+        }
+    },
+    {
+        title: 'Carpentry',
+        description: 'Need a custom piece? We can help you with your next carpentry project.',
+        image: 'carpentry.jpeg',
+        cta: {
+            label: 'Learn About Our Carpentry Services',
+            href: '/services/carpentry'
+        }
+    },
+    {
+        title: 'Furniture Refresh',
+        description: 'Want to update your furniture? We can help you with your next furniture refresh project.',
+        image: 'furniture-refresh.jpeg',
+        cta: {
+            label: 'See Our Furniture Refresh Services',
+            href: '/services/furniture'
+        }
+    },
+    {
+        title: 'Flooring & Tile',
+        description: 'Need new floors? We can help you with your next flooring or tile project.',
         image: 'bathroomremodel.jpeg',
         cta: {
-            label: 'View Our Painting Services',
-            href: '/services/painting'
+            label: 'View Our Flooring & Tile Services',
+            href: '/services/flooring'
         }
     }
 ]
@@ -97,10 +124,10 @@ export const CAROUSEL_DELAY: number = 7;
 
 export const DEFAULT_MAP_CENTER = {
     lat: 36.9636545,
-    lng: -86.4805194
+    lng: -86.4805200
 }
 
-export const DEFAULT_MAP_ZOOM: number = 8.5;
+export const DEFAULT_MAP_ZOOM: number = 8.2;
 
 export const COVERAGE_DETAIL_HEADER: string = "Our Coverage Area";
 export const COVERAGE_DETAIL_TEXT: string = "We are proud to serve the following areas:";

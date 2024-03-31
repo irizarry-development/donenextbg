@@ -3,6 +3,23 @@
     row-gap: 6rem;
 }
 
+/* Tablet size */
+
+@media screen and (min-width: 768px) {
+    .card-masonry {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+    }
+}
+
+/* Laptop size */
+
+@media screen and (min-width: 1024px) {
+    .card-masonry {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .card-masonry .card {
     border-radius: 1rem;
     /* background: var(--ivory-300); */

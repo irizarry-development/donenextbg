@@ -15,18 +15,18 @@ export default function Carousel() {
         }, CAROUSEL_DELAY * 1000);
         return () => clearInterval(interval);
     })
-    
+
     return (
         <section className="carousel">
-                <Image className="active-carousel-image" src={`/carousel/carousel-${active + 1}.jpeg`} alt={`Carousel Image ${active}`} width={800} height={400} />
+            <Image className="active-carousel-image" src={`/carousel/carousel-${active + 1}.jpeg`} alt={`Carousel Image ${active}`} width={800} height={400} />
             <section className="carousel-arrows">
-                <FaCircleChevronLeft 
+                <FaCircleChevronLeft
                     className="carousel-arrow"
                     onClick={() => setActive(active - 1 < 0 ? 9 : active - 1)}
                 />
                 <FaCircleChevronRight
                     className="carousel-arrow"
-                    onClick={() => setActive(active + 1 > 9 ? 0 : active + 1)}   
+                    onClick={() => setActive(active + 1 > 9 ? 0 : active + 1)}
                 />
             </section>
         </section>

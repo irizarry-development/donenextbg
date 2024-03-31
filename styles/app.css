@@ -6,6 +6,8 @@
 @import 'components/wave-container.css';
 @import 'components/container.css';
 @import 'components/card.css';
+@import 'components/jumbotron.css';
+@import 'components/form.css';
 
 @import 'app/page.css';
 @import 'app/coverage/page.css';
