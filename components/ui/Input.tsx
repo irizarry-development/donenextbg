@@ -1,5 +1,5 @@
 interface InputProps {
-    readonly type: "text" | "email" | "tel" | "date" | "multiline"
+    readonly type: "text" | "email" | "tel" | "date" | "multiline" | "checkbox"
     readonly placeholder: string
     readonly label?: string
     readonly id: string

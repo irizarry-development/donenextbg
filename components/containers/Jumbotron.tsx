@@ -1,9 +1,33 @@
+"use client";
+
+import axios from "axios";
 import { JUMBOTRON_BUTTON_HREF, JUMBOTRON_BUTTON_TEXT, JUMBOTRON_TEXT } from "~/app/app.config";
 import Button from "~/components/ui/Button";
 import Form from "~/components/ui/Form";
 import Input from "~/components/ui/Input";
 
 export default function Jumbotron() {
+
+    async function submitForm(formData: FormData) {
+        
+        const submission = {
+            email: formData.get("email"),
+            name: formData.get("name"),
+            phone: formData.get("phone"),
+            projectType: formData.get("project-type"),
+            projectDetails: formData.get("project-details"),
+            legalConsent: formData.get("legal-consent")
+        }
+
+        try {
+            await axios.post("/api/v1/contact-form", submission)
+
+            
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
     return (
         <section className="jumbotron">
             <section className="jumbotron-content">
@@ -20,6 +44,7 @@ export default function Jumbotron() {
             <Form
                 formTitle="Get Started"
                 cssSelector="jumbotron-form"
+                handler={submitForm}
             >
                 <Input
                     id="name"
@@ -49,6 +74,12 @@ export default function Jumbotron() {
                     id="project-details"
                     placeholder="Enter your project details"
                     type="multiline"
+                />
+                <Input
+                    id="legal-consent"
+                    type="checkbox"
+                    label="I agree to allow DoneNextBG to store and use data submitted by this form to contact me."
+                    placeholder=""
                 />
                 <Button
                     text="Request Quote"

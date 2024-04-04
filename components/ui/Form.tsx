@@ -4,15 +4,17 @@ interface FormProps {
     readonly children: ReactNode
     readonly formTitle: string
     readonly cssSelector?: string
+    readonly handler?: (event: any) => void
 }
 
 export default function Form({
     children,
     formTitle,
-    cssSelector
+    cssSelector,
+    handler
 }: FormProps) {
     return (
-        <form className={`form ${cssSelector}`}>
+        <form action={handler} className={`form ${cssSelector}`}>
             <h2 className="form-title">{formTitle}</h2>
             <fieldset className="form-content">
 
