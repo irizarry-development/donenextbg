@@ -23,15 +23,29 @@
 }
 
 .form .form-content .form-field input,
-.form .form-content .form-field textarea {
+.form .form-content .form-field textarea,
+.form .form-content .form-field select {
     font-size: 1.6rem;
     border: 0.2rem solid var(--gray-300);
     padding: 1rem;
     outline: none;
     transition: 150ms ease-in-out;
+    color: var(--gray-600);
 }
 
 .form .form-content .form-field input:focus,
 .form .form-content .form-field textarea:focus {
     border: 0.2rem solid var(--pink-600);
+}
+
+.form .form-content .form-field.checkbox {
+    grid-template-columns: 1fr 2.4rem;
+}
+
+.form .form-content .form-field.checkbox .label {
+    align-self: center;
+}
+
+.form .form-content .form-field.checkbox input {
+    cursor: pointer;
 }

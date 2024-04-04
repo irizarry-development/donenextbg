@@ -67,7 +67,9 @@ export default function Jumbotron() {
                 <Input
                     id="project-type"
                     placeholder="Enter your project type"
-                    type="text"
+                    type="select"
+                    label="Select your project type"
+                    options={["Interior Painting", "Exterior Painting", "Carpentry", "Other"]}
                 />
 
                 <Input
