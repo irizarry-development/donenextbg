@@ -1,5 +1,15 @@
+import { Fragment } from "react";
+import Jumbotron from "~/components/containers/Jumbotron";
+
 export default function AboutPage() {
     return (
-        <h1>TODO: About page</h1>
+        <Fragment>
+            <Jumbotron 
+                titleOne="About"
+                titleTwo="Us"
+                displayForm={false}
+                titleOnly
+            />
+        </Fragment>
     )
 }

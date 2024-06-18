@@ -6,18 +6,26 @@ import CardMasonry from "~/components/ui/CardMasonry";
 import Carousel from "~/components/carousel/Carousel";
 import Button from "~/components/ui/Button";
 import Card from "~/components/ui/Card";
-import { CONTACT_EMAIL, CONTACT_PHONE_NUMBER, SERVICE_CARDS } from "~/app/app.config";
+import { CONTACT_EMAIL, CONTACT_PHONE_NUMBER, JUMBOTRON_BUTTON_HREF, JUMBOTRON_BUTTON_TEXT, JUMBOTRON_TEXT, SERVICE_CARDS } from "~/app/app.config";
 
 export default function Home() {
   return (
     <Fragment>
-      <Jumbotron /> 
+
+      <Jumbotron
+        titleOne="DONE."
+        titleTwo="NEXT."
+        jumbotronText={JUMBOTRON_TEXT}
+        jumbotronButtonText={JUMBOTRON_BUTTON_TEXT}
+        jumbotronButtonHref={JUMBOTRON_BUTTON_HREF}
+        displayForm
+      />
       <WaveContainer
         title="Our Services"
         subtitle="We offer a wide variety of services to help you get your house looking its best."
       >
         <CardMasonry>
-            {SERVICE_CARDS.map((card, index) => <Card key={index} {...card} />)}
+          {SERVICE_CARDS.map((card, index) => <Card key={index} {...card} />)}
         </CardMasonry>
       </WaveContainer>
       <Container

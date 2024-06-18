@@ -54,10 +54,10 @@ export default function Footer() {
                 <FooterContainer title="Contact Us">
                     <section className="app-footer-contact">
                         <a href={`tel:${CONTACT_PHONE_NUMBER}`} className="app-footer-contact-link">
-                            <FaPhone className="app-footer-contact-icon" /> 555-555-5555
+                            <FaPhone className="app-footer-contact-icon" />{CONTACT_PHONE_NUMBER}
                         </a>
                         <a href={`mailto:${CONTACT_EMAIL}`} className="app-footer-contact-link">
-                            <FaEnvelope className="app-footer-contact-icon" /> hello@email.com
+                            <FaEnvelope className="app-footer-contact-icon" />{CONTACT_EMAIL}
                         </a>
                     </section>
                 </FooterContainer>

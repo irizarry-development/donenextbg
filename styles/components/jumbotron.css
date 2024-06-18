@@ -9,6 +9,10 @@
     align-self: center;
 }
 
+.jumbotron.title-only .jumbotron-content {
+    grid-template-rows: repeat(2, 8rem);
+}
+
 .jumbotron-form {
     display: none;
 }
