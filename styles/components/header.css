@@ -1,6 +1,6 @@
 .app-header {
     height: 8rem;
-    border-bottom: 0.4rem solid var(--gold-100);
+    border-bottom: 0.4rem solid var(--green-900);
     position: fixed;
     width: 100vw;
     top: 0;
@@ -64,17 +64,17 @@
     align-self: center;
     display: grid;
     font-size: 2.2rem;
-    font-family: var(--normal-font);
+    font-family: var(--secondary-font);
     grid-auto-flow: column;
     column-gap: 0.4rem;
     text-align: right;
     cursor: pointer;
-    color: var(--gold-100);
+    color: var(--brown-900);
     text-transform: uppercase;
 }
 
 .app-header .app-header-container .menu-toggle .app-menu-toggle {
-    fill: var(--gold-100);
+    fill: var(--brown-900);
     place-self: center;
 }
 

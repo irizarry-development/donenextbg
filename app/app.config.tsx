@@ -59,25 +59,25 @@ interface ServiceCard {
 
 export const SERVICE_CARDS: ServiceCard[] = [
     {
-        title: 'Repair',
+        title: 'Windows? Covered.',
         description: 'Need a quick fix? We can help you with your next repair project.',
         image: 'repair.jpeg',
         cta: {
-            label: 'View Our Repair Services',
+            label: 'Window Services',
             href: '/services/repair'
         }
     },
     {
-        title: 'Remodel',
+        title: 'Walls? Dressed.',
         description: 'Want to freshen things up? Hire us for your next remodel project, big or small.',
         image: 'kitchenremodel.jpeg',
         cta: {
-            label: 'See Our Remodel Services',
+            label: 'Remodel Services',
             href: '/services/remodel'
         }
     },
     {
-        title: 'Painting',
+        title: 'Art and Mirrors? Hung.',
         description: 'We can help you with your next painting project. From walls to cabinets, we have you covered.',
         image: 'painting.jpeg',
         cta: {
@@ -86,7 +86,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
         }
     },
     {
-        title: 'Carpentry',
+        title: 'Bathrooms? Renovated.',
         description: 'Need a custom piece? We can help you with your next carpentry project.',
         image: 'carpentry.jpeg',
         cta: {
@@ -95,7 +95,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
         }
     },
     {
-        title: 'Furniture Refresh',
+        title: 'Kitchen? Refreshed.',
         description: 'Want to update your furniture? We can help you with your next furniture refresh project.',
         image: 'furniture-refresh.jpeg',
         cta: {
@@ -104,12 +104,30 @@ export const SERVICE_CARDS: ServiceCard[] = [
         }
     },
     {
-        title: 'Flooring & Tile',
+        title: 'Airbnb? Ready.',
         description: 'Need new floors? We can help you with your next flooring or tile project.',
         image: 'bathroomremodel.jpeg',
         cta: {
             label: 'View Our Flooring & Tile Services',
             href: '/services/flooring'
+        }
+    },
+    {
+        title: 'Yard? Manicured.',
+        description: 'Need a new look? We can help you with your next landscaping project.',
+        image: 'bathroomremodel.jpeg',
+        cta: {
+            label: 'Learn About Our Landscaping Services',
+            href: '/services/landscaping'
+        }
+    },
+    {
+        title: 'Outdoor Living? Built.',
+        description: 'Want to add a new room? We can help you with your next addition project.',
+        image: 'bathroomremodel.jpeg',
+        cta: {
+            label: 'See Our Addition Services',
+            href: '/services/addition'
         }
     }
 ]

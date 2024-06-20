@@ -44,7 +44,7 @@ export default function Home() {
         <Button text="Learn About Us" href="/about" size="large" color="secondary" />
       </WaveContainer>
       <Container
-        title="Ready to Start?"
+        title="Done. Next?"
         subtitle="Contact us today to get started on your next project."
         image="contactus.jpeg"
         alignment="left"

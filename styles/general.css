@@ -2,8 +2,7 @@
     --dark-green: #0E4C05;
     --dark-green-100: #126006;
     --dark-brown: #402312;
-    --white: #FFFFFF;
-    --ivory: #FFFCE8;
+    --white: #F7F5F3;
     --ivory-100: #FFFAD6;
     --ivory-200: #FFF6C2;
     --ivory-300: #FFF3AD;
@@ -27,17 +26,20 @@
     --pink-400: #D7B5AD;
     --pink-500: #C99C92;
     --pink-600: #BC8376;
+    /* Browns */
+    --brown-900: #935635;
+    /* Greens */
+    --green-900: #6B8D53;
+    /* Tans */
+    --tan-900: #a89583;
 
-
-
-    --bold-font: Barlow Condensed, sans-serif;
-    --semi-bold-font: Lora, serif;
-    --regular-font: Raleway, sans-serif;
+    --primary-font: Oleo Script, cursive;
+    --secondary-font: Lora, serif;
 }
 
 html {
     font-size: 10px;
-    font-family: var(--regular-font);
+    font-family: var(--secondary-font);
     background: var(--white);
 }
 
@@ -60,25 +62,25 @@ html {
     text-align: center;
     text-transform: uppercase;
     border: 0.4rem solid;
+    font-family: var(--secondary-font);
 }
 
 .btn.primary {
-    background: var(--white);
-    border-color: var(--gold-100);
+    border-color: var(--green-900);
     color: var(--gray-900);
-}
 
-.btn.primary:hover {
-    background: var(--gold-100);
-    color: var(--gray-900);
+    &:hover {
+        background: var(--green-900);
+        color: var(--white);
+    }
 }
 
 .btn.secondary {
-    background: var(--white);
     color: var(--gray-900);
-    border-color: var(--pink-500);
-}
+    border-color: var(--brown-900);
 
-.btn.secondary:hover {
-    background: var(--pink-500);
+    &:hover {
+        background: var(--brown-900);
+        color: var(--white);
+    }
 }

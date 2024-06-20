@@ -1,6 +1,6 @@
 .form .form-title {
     font-size: 3.4rem;
-    font-family: var(--bold-font);
+    font-family: var(--primary-font);
     margin: 0 0 2rem 0;
     color: var(--pink-600);
     text-transform: uppercase;
